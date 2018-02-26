@@ -1,4 +1,5 @@
-# SassComponent
+# SassComponent 
+[Live on CodePen.io](https://codepen.io/davidsells/project/editor/DNKKLm)
 ## Sass Grid Example
 
 This project bootstrapped my investigation of generalizing.  It was the programmatic approach to CSS that was of interest.  The exploration was into programmatic SASS to create a customizable CSS component.
