@@ -1,0 +1,55 @@
+
+//colors
+$color_pickled_bluewood_approx: #34495e;
+$color_submarine_approx: #bdc3c7;
+$color_athens_gray_approx: #ecf0f1;
+$color_flush_mahogany_approx: #c0392b;
+$color_cinnabar_approx: #e74c3c;
+$color_boston_blue_approx: #2980b9;
+$color_curious_blue_approx: #3498db;
+$color_niagara_approx: #16a085;
+$color_mountain_meadow_approx: #1abc9c;
+$color_tree_poppy_approx: #f39c12;
+$color_corn_approx: #f1c40f;
+$color_thunderbird_approx: #d62c1a;
+$color_royal_purple_approx: rebeccapurple;
+
+// Color scheme of balls
+$aButtonFirstList: (
+                (($color_boston_blue_approx, $color_curious_blue_approx), ($color_boston_blue_approx, $color_boston_blue_approx, $color_royal_purple_approx)),
+                (($color_flush_mahogany_approx, $color_cinnabar_approx), ($color_flush_mahogany_approx, $color_thunderbird_approx, $color_royal_purple_approx)),
+                (($color_boston_blue_approx, $color_curious_blue_approx), ($color_boston_blue_approx, $color_boston_blue_approx, $color_royal_purple_approx)),
+                (($color_niagara_approx, $color_boston_blue_approx), ($color_boston_blue_approx, $color_boston_blue_approx, $color_royal_purple_approx)),
+                (($color_boston_blue_approx, $color_curious_blue_approx), ($color_boston_blue_approx, $color_boston_blue_approx, $color_royal_purple_approx)),
+                (($color_boston_blue_approx, $color_curious_blue_approx), ($color_boston_blue_approx, $color_boston_blue_approx, $color_royal_purple_approx)),
+                (($color_boston_blue_approx, $color_curious_blue_approx), ($color_boston_blue_approx, $color_boston_blue_approx, $color_royal_purple_approx)),
+                (($color_boston_blue_approx, $color_curious_blue_approx), ($color_boston_blue_approx, $color_boston_blue_approx, $color_royal_purple_approx)),
+                (($color_boston_blue_approx, $color_curious_blue_approx), ($color_boston_blue_approx, $color_boston_blue_approx, $color_royal_purple_approx)),
+                (($color_boston_blue_approx, $color_curious_blue_approx), ($color_boston_blue_approx, $color_boston_blue_approx, $color_royal_purple_approx)),
+                (($color_flush_mahogany_approx, $color_cinnabar_approx), ($color_flush_mahogany_approx, $color_thunderbird_approx, $color_royal_purple_approx))
+);
+
+// containerSize
+$containerSize: 500; // width of container
+
+// Button Sizes
+$baseButtonSize: 200; // width of center button
+$firstLevelButtonSize: 160; // width of first level menu
+$secondLevelButtonSize: 90; // width of second level menu
+
+$offset: 20; // offset of inner circle -fixed
+$numberOfMenus: 4;
+$secondLevelNumberOfMenus: 3;
+$angleOffset: 90deg;
+
+$angleOfCoverage: 360;
+$angleOfCoverageSecondLevel: 180;
+$inset_level: 20; // Border
+
+$first_level_inset: -20;
+
+//fonts
+$font_0: Roboto;
+$font_1: sans-serif;
+
+

@@ -1,0 +1,629 @@
+/*
+gray: inner ball hover
+  ((main ball color, main ball hover color),
+          ( outside ball color,
+            outside ball centre color,
+            outside centre hover ball
+          )
+   ),
+ */
+
+.img_center {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+body {
+  background: #34495e;
+}
+
+h2 {
+  font-family: Roboto, sans-serif;
+  color: #bdc3c7;
+  text-align: center;
+  margin: 40px 0;
+  font-size: 28px;
+}
+
+.center {
+  display: block;
+  margin: auto;
+  width: 500px;
+  position: relative;
+}
+
+img {
+  border-radius: 50%;
+  text-align: center;
+}
+
+.baseButton {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rebeccapurple;
+  position: absolute;
+  top: 110px;
+  left: 150px;
+  transition: all .3s ease;
+}
+
+.baseButton:hover {
+  background: rebeccapurple;
+}
+
+.baseButton:hover .button1_1 {
+  top: 154.05778px;
+  left: 132.48783px;
+  transition: all .3s .0s ease;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+.baseButton:hover .button1_2 {
+  top: -10.38843px;
+  left: 192.34136px;
+  transition: all .3s .0s ease;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+.baseButton:hover .button1_3 {
+  top: -144.44621px;
+  left: 79.85353px;
+  transition: all .3s .0s ease;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+.baseButton:hover .button1_4 {
+  top: -114.05778px;
+  left: -92.48783px;
+  transition: all .3s .0s ease;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+.baseButton:hover .button1_5 {
+  top: 50.38865px;
+  left: -152.34131px;
+  transition: all .3s .0s ease;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+.baseButton:hover .button1_6 {
+  top: 184.46131px;
+  left: -39.84961px;
+  transition: all .3s .0s ease;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+.button1_1,
+.button1_2,
+.button1_3,
+.button1_4,
+.button1_5,
+.button1_6 {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: all .3s .6s ease;
+}
+
+*[class*='button2_'] {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  transition: all .3s .0s ease;
+  transform: scale(0, 0);
+  z-index: 1;
+}
+
+.button1_1 {
+  background: #87CEFF;
+  display: block;
+  /*for the img inside your div */
+  margin: 0 auto;
+}
+
+.button1_1:hover {
+  background: #7EC0EE;
+  transition: all .3s .0s ease;
+}
+
+.button1_1:hover .button2_1_1 {
+  top: 142.16004px;
+  left: -24.46262px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #6CA6CD;
+  border: 20px solid #4A708B;
+}
+
+.button1_1:hover .button2_1_1:hover {
+  background: #87CEEB !important;
+  z-index: 10;
+}
+
+.button1_1:hover .button2_1_2 {
+  top: 144.96402px;
+  left: 55.83286px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #6CA6CD;
+  border: 20px solid #4A708B;
+}
+
+.button1_1:hover .button2_1_2:hover {
+  background: #87CEEB !important;
+  z-index: 10;
+}
+
+.button1_1:hover .button2_1_3 {
+  top: 100.03599px;
+  left: 122.4414px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #6CA6CD;
+  border: 20px solid #4A708B;
+}
+
+.button1_1:hover .button2_1_3:hover {
+  background: #87CEEB !important;
+  z-index: 10;
+}
+
+.button1_1:hover .button2_1_4 {
+  top: 24.53693px;
+  left: 149.92081px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #6CA6CD;
+  border: 20px solid #4A708B;
+}
+
+.button1_1:hover .button2_1_4:hover {
+  background: #87CEEB !important;
+  z-index: 10;
+}
+
+.button1_1:hover .button2_1_5 {
+  top: -52.69508px;
+  left: 127.77488px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #6CA6CD;
+  border: 20px solid #4A708B;
+}
+
+.button1_1:hover .button2_1_5:hover {
+  background: #87CEEB !important;
+  z-index: 10;
+}
+
+.button1_2 {
+  background: #9932CC;
+  display: block;
+  /*for the img inside your div */
+  margin: 0 auto;
+}
+
+.button1_2:hover {
+  background: #BF3EFF;
+  transition: all .3s .0s ease;
+}
+
+.button1_2:hover .button2_2_1 {
+  top: 119.58578px;
+  left: 103.56239px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #B23AEE;
+  border: 20px solid #9A32CD;
+}
+
+.button1_2:hover .button2_2_1:hover {
+  background: #68228B !important;
+  z-index: 10;
+}
+
+.button1_2:hover .button2_2_2 {
+  top: 51.44985px;
+  left: 146.13844px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #B23AEE;
+  border: 20px solid #9A32CD;
+}
+
+.button1_2:hover .button2_2_2:hover {
+  background: #68228B !important;
+  z-index: 10;
+}
+
+.button1_2:hover .button2_2_3 {
+  top: -28.69886px;
+  left: 140.5339px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #B23AEE;
+  border: 20px solid #9A32CD;
+}
+
+.button1_2:hover .button2_2_3:hover {
+  background: #68228B !important;
+  z-index: 10;
+}
+
+.button1_2:hover .button2_2_4 {
+  top: -90.24625px;
+  left: 88.8895px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #B23AEE;
+  border: 20px solid #9A32CD;
+}
+
+.button1_2:hover .button2_2_4:hover {
+  background: #68228B !important;
+  z-index: 10;
+}
+
+.button1_2:hover .button2_2_5 {
+  top: -109.68333px;
+  left: 10.93166px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #B23AEE;
+  border: 20px solid #9A32CD;
+}
+
+.button1_2:hover .button2_2_5:hover {
+  background: #68228B !important;
+  z-index: 10;
+}
+
+.button1_3 {
+  background: #FF7F50;
+  display: block;
+  /*for the img inside your div */
+  margin: 0 auto;
+}
+
+.button1_3:hover {
+  background: #FF7256;
+  transition: all .3s .0s ease;
+}
+
+.button1_3:hover .button2_3_1 {
+  top: -2.57426px;
+  left: 148.02501px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #EE6A50;
+  border: 20px solid #CD5B45;
+}
+
+.button1_3:hover .button2_3_1:hover {
+  background: #8B3E2F !important;
+  z-index: 10;
+}
+
+.button1_3:hover .button2_3_2 {
+  top: -73.51417px;
+  left: 110.30559px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #EE6A50;
+  border: 20px solid #CD5B45;
+}
+
+.button1_3:hover .button2_3_2:hover {
+  background: #8B3E2F !important;
+  z-index: 10;
+}
+
+.button1_3:hover .button2_3_3 {
+  top: -108.73485px;
+  left: 38.0925px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #EE6A50;
+  border: 20px solid #CD5B45;
+}
+
+.button1_3:hover .button2_3_3:hover {
+  background: #8B3E2F !important;
+  z-index: 10;
+}
+
+.button1_3:hover .button2_3_4 {
+  top: -94.78319px;
+  left: -41.0313px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #EE6A50;
+  border: 20px solid #CD5B45;
+}
+
+.button1_3:hover .button2_3_4:hover {
+  background: #8B3E2F !important;
+  z-index: 10;
+}
+
+.button1_3:hover .button2_3_5 {
+  top: -36.98824px;
+  left: -96.84322px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #EE6A50;
+  border: 20px solid #CD5B45;
+}
+
+.button1_3:hover .button2_3_5:hover {
+  background: #8B3E2F !important;
+  z-index: 10;
+}
+
+.button1_4 {
+  background: #DB7093;
+  display: block;
+  /*for the img inside your div */
+  margin: 0 auto;
+}
+
+.button1_4:hover {
+  background: #FF82AB;
+  transition: all .3s .0s ease;
+}
+
+.button1_4:hover .button2_4_1 {
+  top: -102.16004px;
+  left: 64.46262px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #EE799F;
+  border: 20px solid #CD6889;
+}
+
+.button1_4:hover .button2_4_1:hover {
+  background: #8B475D !important;
+  z-index: 10;
+}
+
+.button1_4:hover .button2_4_2 {
+  top: -104.96402px;
+  left: -15.83286px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #EE799F;
+  border: 20px solid #CD6889;
+}
+
+.button1_4:hover .button2_4_2:hover {
+  background: #8B475D !important;
+  z-index: 10;
+}
+
+.button1_4:hover .button2_4_3 {
+  top: -60.03599px;
+  left: -82.4414px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #EE799F;
+  border: 20px solid #CD6889;
+}
+
+.button1_4:hover .button2_4_3:hover {
+  background: #8B475D !important;
+  z-index: 10;
+}
+
+.button1_4:hover .button2_4_4 {
+  top: 15.46313px;
+  left: -109.9208px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #EE799F;
+  border: 20px solid #CD6889;
+}
+
+.button1_4:hover .button2_4_4:hover {
+  background: #8B475D !important;
+  z-index: 10;
+}
+
+.button1_4:hover .button2_4_5 {
+  top: 92.69605px;
+  left: -87.77466px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #EE799F;
+  border: 20px solid #CD6889;
+}
+
+.button1_4:hover .button2_4_5:hover {
+  background: #8B475D !important;
+  z-index: 10;
+}
+
+.button1_5 {
+  background: #808080;
+  display: block;
+  /*for the img inside your div */
+  margin: 0 auto;
+}
+
+.button1_5:hover {
+  background: #FCFCFC;
+  transition: all .3s .0s ease;
+}
+
+.button1_5:hover .button2_5_1 {
+  top: -79.58578px;
+  left: -63.56239px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #FAFAFA;
+  border: 20px solid #F7F7F7;
+}
+
+.button1_5:hover .button2_5_1:hover {
+  background: #F2F2F2 !important;
+  z-index: 10;
+}
+
+.button1_5:hover .button2_5_2 {
+  top: -11.44982px;
+  left: -106.13844px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #FAFAFA;
+  border: 20px solid #F7F7F7;
+}
+
+.button1_5:hover .button2_5_2:hover {
+  background: #F2F2F2 !important;
+  z-index: 10;
+}
+
+.button1_5:hover .button2_5_3 {
+  top: 68.69926px;
+  left: -100.53381px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #FAFAFA;
+  border: 20px solid #F7F7F7;
+}
+
+.button1_5:hover .button2_5_3:hover {
+  background: #F2F2F2 !important;
+  z-index: 10;
+}
+
+.button1_5:hover .button2_5_4 {
+  top: 130.25136px;
+  left: -48.88823px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #FAFAFA;
+  border: 20px solid #F7F7F7;
+}
+
+.button1_5:hover .button2_5_4:hover {
+  background: #F2F2F2 !important;
+  z-index: 10;
+}
+
+.button1_5:hover .button2_5_5 {
+  top: 149.73319px;
+  left: 29.08219px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #FAFAFA;
+  border: 20px solid #F7F7F7;
+}
+
+.button1_5:hover .button2_5_5:hover {
+  background: #F2F2F2 !important;
+  z-index: 10;
+}
+
+.button1_6 {
+  background: #8A2BE2;
+  display: block;
+  /*for the img inside your div */
+  margin: 0 auto;
+}
+
+.button1_6:hover {
+  background: #0000FF;
+  transition: all .3s .0s ease;
+}
+
+.button1_6:hover .button2_6_1 {
+  top: 42.57442px;
+  left: -108.02497px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #0000EE;
+  border: 20px solid #0000CD;
+}
+
+.button1_6:hover .button2_6_1:hover {
+  background: #00008B !important;
+  z-index: 10;
+}
+
+.button1_6:hover .button2_6_2 {
+  top: 113.51643px;
+  left: -70.30504px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #0000EE;
+  border: 20px solid #0000CD;
+}
+
+.button1_6:hover .button2_6_2:hover {
+  background: #00008B !important;
+  z-index: 10;
+}
+
+.button1_6:hover .button2_6_3 {
+  top: 148.75881px;
+  left: 1.91393px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #0000EE;
+  border: 20px solid #0000CD;
+}
+
+.button1_6:hover .button2_6_3:hover {
+  background: #00008B !important;
+  z-index: 10;
+}
+
+.button1_6:hover .button2_6_4 {
+  top: 134.98443px;
+  left: 81.09093px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #0000EE;
+  border: 20px solid #0000CD;
+}
+
+.button1_6:hover .button2_6_4:hover {
+  background: #00008B !important;
+  z-index: 10;
+}
+
+.button1_6:hover .button2_6_5 {
+  top: 78.38427px;
+  left: 137.29576px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #0000EE;
+  border: 20px solid #0000CD;
+}
+
+.button1_6:hover .button2_6_5:hover {
+  background: #00008B !important;
+  z-index: 10;
+}

@@ -1,0 +1,115 @@
+body {
+  background: $color_pickled_bluewood_approx;
+}
+
+h2 {
+  font-family: $font_0, $font_1;
+  color: $color_submarine_approx;
+  text-align: center;
+  margin: 40px 0;
+  font-size: 28px;
+}
+
+.center {
+  display: block;
+  margin: auto;
+  width: $containerSize * 1px;
+  position: relative;
+}
+
+@mixin hoverButton($top,$left) {
+  top: $top;
+  left: $left;
+  transition: all .3s .0s ease;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+@mixin hoverOuterButton($top,$left,$background) {
+  top: $top;
+  left: $left;
+  background: $background;
+  transform: scale(1, 1);
+}
+
+@mixin button-mixin($back_color, $border_color, $back2_color) {
+  background: $back_color;
+  border: $inset_level * 1px solid $border_color;
+  &:hover {
+    background: $back2_color !important;
+    z-index: 10;
+  }
+}
+
+img {
+  border-radius: 50%;
+  text-align: center;
+}
+
+
+.baseButton {
+  width: $baseButtonSize * 1px;
+  height: $baseButtonSize * 1px;
+  border-radius: 50%;
+  background: $color_royal_purple_approx;
+  position: absolute;
+  top: 110px;
+  left: 150px;
+  transition: all .3s ease;
+  &:hover {
+    background: $color_royal_purple_approx;
+    @for $a from 1 through length($firstLevel) {
+      $b: nth($firstLevel, $a);
+      .button1_#{$a} {
+        @include hoverButton(nth($b, 1), nth($b, 2));
+      }
+    }
+  }
+}
+
+%centerButton {
+  width: $firstLevelButtonSize * 1px;
+  height: $firstLevelButtonSize * 1px;
+  border-radius: 50%;
+  position: absolute;
+  top: $offset * 1px;
+  left: $offset * 1px;
+  transition: all .3s .6s ease;
+}
+
+*[class*='button2_'] {
+  width: $secondLevelButtonSize * 1px;
+  height: $secondLevelButtonSize * 1px;
+  border-radius: 50%;
+  position: absolute;
+  transition: all .3s .0s ease;
+  transform: scale(0, 0);
+  z-index: 1;
+}
+
+
+@for $buttonNumber from 1 through length($ButtonFirstList) {
+  $firstLevelDefn: nth($ButtonFirstList, $buttonNumber);
+  $firstLevelBackground: nth($firstLevelDefn, 1);
+  .button1_#{$buttonNumber} {
+    background: nth($firstLevelBackground, 1);
+    @extend %centerButton;
+    display: block; /*for the img inside your div */
+    margin: 0 auto;
+
+    &:hover {
+      background: nth($firstLevelBackground, 2);
+      transition: all .3s .0s ease;
+      $secondLevelFill: nth($firstLevelDefn, 3);
+      $fill: nth($firstLevelDefn, 2);
+      @for $a from 1 through length($secondLevelFill) {
+        $b: nth($secondLevelFill, $a);
+        .button2_#{$buttonNumber}_#{$a} {
+          @include hoverOuterButton(nth($b, 1), nth($b, 2), nth($b, 3));
+          @include button-mixin(nth($fill, 1), nth($fill, 2), nth($fill, 3));
+        }
+      }
+    }
+  }
+}

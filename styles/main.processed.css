@@ -1,0 +1,313 @@
+body {
+  background: #34495e;
+}
+
+h2 {
+  font-family: Roboto, sans-serif;
+  color: #bdc3c7;
+  text-align: center;
+  margin: 40px 0;
+  font-size: 28px;
+}
+
+.center {
+  display: block;
+  margin: auto;
+  width: 500px;
+  position: relative;
+}
+
+img {
+  border-radius: 50%;
+  text-align: center;
+}
+
+.baseButton {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rebeccapurple;
+  position: absolute;
+  top: 110px;
+  left: 150px;
+  transition: all .3s ease;
+}
+
+.baseButton:hover {
+  background: rebeccapurple;
+}
+
+.baseButton:hover .button1_1 {
+  top: 20px;
+  left: 190px;
+  transition: all .3s .0s ease;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+.baseButton:hover .button1_2 {
+  top: -150.0px;
+  left: 20.0px;
+  transition: all .3s .0s ease;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+.baseButton:hover .button1_3 {
+  top: 20.00009px;
+  left: -149.99998px;
+  transition: all .3s .0s ease;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+.baseButton:hover .button1_4 {
+  top: 190.05121px;
+  left: 20.01407px;
+  transition: all .3s .0s ease;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+.button1_1,
+.button1_2,
+.button1_3,
+.button1_4 {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: all .3s .6s ease;
+}
+
+*[class*='button2_'] {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: absolute;
+  transition: all .3s .0s ease;
+  transform: scale(0, 0);
+  z-index: 1;
+}
+
+.button1_1 {
+  background: #2980b9;
+  display: block;
+  /*for the img inside your div */
+  margin: 0 auto;
+}
+
+.button1_1:hover {
+  background: #3498db;
+  transition: all .3s .0s ease;
+}
+
+.button1_1:hover .button2_1_1 {
+  top: 128.25318px;
+  left: 82.5px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #2980b9;
+  border: 20px solid #2980b9;
+}
+
+.button1_1:hover .button2_1_1:hover {
+  background: rebeccapurple !important;
+  z-index: 10;
+}
+
+.button1_1:hover .button2_1_2 {
+  top: 20px;
+  left: 145px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #2980b9;
+  border: 20px solid #2980b9;
+}
+
+.button1_1:hover .button2_1_2:hover {
+  background: rebeccapurple !important;
+  z-index: 10;
+}
+
+.button1_1:hover .button2_1_3 {
+  top: -88.25318px;
+  left: 82.5px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #2980b9;
+  border: 20px solid #2980b9;
+}
+
+.button1_1:hover .button2_1_3:hover {
+  background: rebeccapurple !important;
+  z-index: 10;
+}
+
+.button1_2 {
+  background: #c0392b;
+  display: block;
+  /*for the img inside your div */
+  margin: 0 auto;
+}
+
+.button1_2:hover {
+  background: #e74c3c;
+  transition: all .3s .0s ease;
+}
+
+.button1_2:hover .button2_2_1 {
+  top: -42.5px;
+  left: 128.25318px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #c0392b;
+  border: 20px solid #d62c1a;
+}
+
+.button1_2:hover .button2_2_1:hover {
+  background: rebeccapurple !important;
+  z-index: 10;
+}
+
+.button1_2:hover .button2_2_2 {
+  top: -105.0px;
+  left: 20.0px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #c0392b;
+  border: 20px solid #d62c1a;
+}
+
+.button1_2:hover .button2_2_2:hover {
+  background: rebeccapurple !important;
+  z-index: 10;
+}
+
+.button1_2:hover .button2_2_3 {
+  top: -42.49999px;
+  left: -88.25317px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #c0392b;
+  border: 20px solid #d62c1a;
+}
+
+.button1_2:hover .button2_2_3:hover {
+  background: rebeccapurple !important;
+  z-index: 10;
+}
+
+.button1_3 {
+  background: #2980b9;
+  display: block;
+  /*for the img inside your div */
+  margin: 0 auto;
+}
+
+.button1_3:hover {
+  background: #3498db;
+  transition: all .3s .0s ease;
+}
+
+.button1_3:hover .button2_3_1 {
+  top: -88.25318px;
+  left: -42.5px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #2980b9;
+  border: 20px solid #2980b9;
+}
+
+.button1_3:hover .button2_3_1:hover {
+  background: rebeccapurple !important;
+  z-index: 10;
+}
+
+.button1_3:hover .button2_3_2 {
+  top: 20.00007px;
+  left: -104.99999px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #2980b9;
+  border: 20px solid #2980b9;
+}
+
+.button1_3:hover .button2_3_2:hover {
+  background: rebeccapurple !important;
+  z-index: 10;
+}
+
+.button1_3:hover .button2_3_3 {
+  top: 128.25879px;
+  left: -42.49859px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #2980b9;
+  border: 20px solid #2980b9;
+}
+
+.button1_3:hover .button2_3_3:hover {
+  background: rebeccapurple !important;
+  z-index: 10;
+}
+
+.button1_4 {
+  background: #16a085;
+  display: block;
+  /*for the img inside your div */
+  margin: 0 auto;
+}
+
+.button1_4:hover {
+  background: #2980b9;
+  transition: all .3s .0s ease;
+}
+
+.button1_4:hover .button2_4_1 {
+  top: 82.5007px;
+  left: -88.25302px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #2980b9;
+  border: 20px solid #2980b9;
+}
+
+.button1_4:hover .button2_4_1:hover {
+  background: rebeccapurple !important;
+  z-index: 10;
+}
+
+.button1_4:hover .button2_4_2 {
+  top: 145.03765px;
+  left: 20.01034px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #2980b9;
+  border: 20px solid #2980b9;
+}
+
+.button1_4:hover .button2_4_2:hover {
+  background: rebeccapurple !important;
+  z-index: 10;
+}
+
+.button1_4:hover .button2_4_3 {
+  top: 83.59156px;
+  left: 128.60363px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #2980b9;
+  border: 20px solid #2980b9;
+}
+
+.button1_4:hover .button2_4_3:hover {
+  background: rebeccapurple !important;
+  z-index: 10;
+}

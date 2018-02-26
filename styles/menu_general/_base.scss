@@ -1,0 +1,63 @@
+// First Level Buttons
+@import "math";
+
+@function calculateMenuPositions( $angleOfCoverage, $numberOfMenus, $innerCircleDiameter,
+$outerCircleDiameter, $angleOffset) {
+  $angleInc: $angleOfCoverage/$numberOfMenus;
+  $calculatedPositions: ();
+  $firstLevelOffsets: ();
+
+  $totalRadius: radius($innerCircleDiameter+$outerCircleDiameter + $first_level_inset);
+  $debugInfo: ();
+
+  @for $count from 1 through $numberOfMenus {
+    $degrees: $angleOffset+$angleInc*($count - 1);
+
+    $firstLevelOffsets: append($firstLevelOffsets, $degrees - 90);
+    $xo: ($totalRadius * cos($degrees) + $offset) * 1px;
+    $yo: ($totalRadius * sin($degrees) + $offset) * 1px;
+    @if $count == 8 {
+      @debug "test `#{$xo}`";
+      @debug "test `#{$yo}`";
+//      @error "test `#{$degrees}`";
+    }
+    $newValue: ($xo, $yo);
+    $calculatedPositions: append($calculatedPositions, $newValue);
+  }
+  //@error "test `#{$calculatedPositions}`";
+  @return ($calculatedPositions, $firstLevelOffsets);
+}
+
+@function calculateMenuPositions2( $angleOfCoverage, $numberOfMenus, $innerCircleDiameter,
+$outerCircleDiameter, $angleOffset, $color) {
+  $angleInc: $angleOfCoverage/$numberOfMenus;
+  $calculatedPositions: ();
+
+  $totalRadius: radius($innerCircleDiameter+$outerCircleDiameter);
+
+  @for $count from 1 through $numberOfMenus {
+    $degrees: $angleOffset+$angleInc*($count - 1);
+    $xo: ($totalRadius * cos($degrees) + $offset) * 1px;
+    $yo: ($totalRadius * sin($degrees) + $offset) * 1px;
+    $newValue: ($xo, $yo, $color);
+    $calculatedPositions: append($calculatedPositions, $newValue);
+  }
+  @return $calculatedPositions;
+}
+
+$firstLevelParameters: calculateMenuPositions($angleOfCoverage, $numberOfMenus, $baseButtonSize, $firstLevelButtonSize, $angleOffset);
+$firstLevel: nth($firstLevelParameters, 1);
+$firstLevelOffsets: nth($firstLevelParameters, 2);
+
+$ButtonFirstList: ();
+@for $count from 1 through length($firstLevelOffsets) {
+  $angleOff: nth($firstLevelOffsets, $count)+30;
+  $temp: calculateMenuPositions2($angleOfCoverageSecondLevel, $secondLevelNumberOfMenus, $firstLevelButtonSize, $secondLevelButtonSize, $angleOff, $color_curious_blue_approx);
+  $tempList: nth($aButtonFirstList, $count);
+  $tempList: append($tempList, $temp);
+  $ButtonFirstList: append($ButtonFirstList, $tempList);
+  //@error "test `#{length($tempList)}`";
+  //@error "test `#{$tempList}`";
+}
+
+//@error "test `#{$ButtonFirstList}`";
