@@ -10,6 +10,17 @@ h2 {
   font-size: 28px;
 }
 
+h3 {
+  font-family: $font_0, $font_1;
+  color: color_submarine_approx;
+  a {
+    color: black; 
+  }
+  text-align: center;
+  margin: 40px 0;
+  font-size: 15px;
+}
+
 .center {
   display: block;
   margin: auto;
