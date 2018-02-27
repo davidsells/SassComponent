@@ -1,189 +1,178 @@
+@import "../utils/colors";
+//---------------------------------------------------------------------------------------------
 //colors
-$color_curious_blue_approx: #3498db;
-$color_pickled_bluewood_approx: #34495e;
-$color_submarine_approx: #bdc3c7;
-$color_royal_purple_approx: rebeccapurple;
+//---------------------------------------------------------------------------------------------
+//  ((main ball color, main ball hover color),
+//          ( outside ball color,
+//            outside ball centre color,
+//            outside centre hover ball
+//          )
+//   ),
 
-$skyblue_1: #87CEFF;
-$skyblue_2: #7EC0EE;
-$skyblue_3: #6CA6CD;
-$skyblue_4: #4A708B;
-$skyblue: #87CEEB;
-$darkorchid: #9932CC;
-$darkorchid_1: #BF3EFF;
-$darkorchid_2: #B23AEE;
-$darkorchid_3: #9A32CD;
-$darkorchid_4: #68228B;
-$coral: #FF7F50;
-$coral_1: #FF7256;
-$coral_2: #EE6A50;
-$coral_3: #CD5B45;
-$coral_4: #8B3E2F;
-$palevioletred: #DB7093;
-$palevioletred_1: #FF82AB;
-$palevioletred_2: #EE799F;
-$palevioletred_3: #CD6889;
-$palevioletred_4: #8B475D;
-$gray: #808080;
-$gray_99: #FCFCFC;
-$gray_98: #FAFAFA;
-$gray_97: #F7F7F7;
-$gray_95: #F2F2F2;
-$blueviolet: #8A2BE2;
-$blue: #0000FF;
-$blue_2: #0000EE;
-$blue_3: #0000CD;
-$blue_4: #00008B;
-$darkolivegreen_1: #CAFF70;
-$darkolivegreen_2: #BCEE68;
-$darkolivegreen_3: #A2CD5A;
-$darkolivegreen_4: #6E8B3D;
-$darkolivegreen: #556B2F;
-$green_1: #00FF00;
-$green_2: #00EE00;
-$green_3: #00CD00;
-$green_4: #008B00;
-$green: #008000;
-$royalblue: #4169E1;
-$royalblue_1: #4876FF;
-$royalblue_2: #436EEE;
-$royalblue_3: #3A5FCD;
-$royalblue_4: #27408B;
-$main_ball_color_1: #87CEFF;
-$main_ball_hover_color_1: #7EC0EE;
-$outside_ball_color_1: #6CA6CD;
-$outside_ball_centre_color_1: #4A708B;
-$outside_centre_hover_ball_1: #87CEEB;
-$main_ball_color_2: #9932CC;
-$main_ball_hover_color_2: #BF3EFF;
-$outside_ball_color_2: #B23AEE;
-$outside_ball_centre_color_2: #9A32CD;
-$outside_centre_hover_ball_2: #68228B;
-$main_ball_color_3: #FF7F50;
-$main_ball_hover_color_3: #FF7256;
-$outside_ball_color_3: #EE6A50;
-$outside_ball_centre_color_3: #CD5B45;
-$outside_centre_hover_ball_3: #8B3E2F;
-$main_ball_color_4: #DB7093;
-$main_ball_hover_color_4: #FF82AB;
-$outside_ball_color_4: #EE799F;
-$outside_ball_centre_color_4: #CD6889;
-$outside_centre_hover_ball_4: #8B475D;
-$main_ball_color_5: #808080;
-$main_ball_hover_color_5: #FCFCFC;
-$outside_ball_color_5: #FAFAFA;
-$outside_ball_centre_color_5: #F7F7F7;
-$outside_centre_hover_ball_5: #F2F2F2;
-$main_ball_color_6: #8A2BE2;
-$main_ball_hover_color_6: #0000FF;
-$outside_ball_color_6: #0000EE;
-$outside_ball_centre_color_6: #0000CD;
-$outside_centre_hover_ball_6: #00008B;
-$main_ball_color_7: #CAFF70;
-$main_ball_hover_color_7: #BCEE68;
-$outside_ball_color_7: #A2CD5A;
-$outside_ball_centre_color_7: #6E8B3D;
-$outside_centre_hover_ball_7: #556B2F;
-$main_ball_color_8: #00FF00;
-$main_ball_hover_color_8: #00EE00;
-$outside_ball_color_8: #00CD00;
-$outside_ball_centre_color_8: #008B00;
-$outside_centre_hover_ball_8: #008000;
-$main_ball_color_9: #4169E1;
-$main_ball_hover_color_9: #4876FF;
-$outside_ball_color_9: #436EEE;
-$outside_ball_centre_color_9: #3A5FCD;
-$outside_centre_hover_ball_9: #27408B;
 $aButtonFirstList: (
-                (($main_ball_color_1, $main_ball_hover_color_1),
-                        ($outside_ball_color_1,
-                        $outside_ball_centre_color_1,
-                        $outside_centre_hover_ball_1
-                        )
-                ) (($main_ball_color_2, $main_ball_hover_color_2),
-                ($outside_ball_color_2,
-                $outside_ball_centre_color_2,
-                $outside_centre_hover_ball_2
-                )
-        ) (($main_ball_color_3, $main_ball_hover_color_3),
-                ($outside_ball_color_3,
-                $outside_ball_centre_color_3,
-                $outside_centre_hover_ball_3
-                )
-        ) (($main_ball_color_4, $main_ball_hover_color_4),
-                ($outside_ball_color_4,
-                $outside_ball_centre_color_4,
-                $outside_centre_hover_ball_4
-                )
-        ) (($main_ball_color_5, $main_ball_hover_color_5),
-                ($outside_ball_color_5,
-                $outside_ball_centre_color_5,
-                $outside_centre_hover_ball_5
-                )
-        ) (($main_ball_color_6, $main_ball_hover_color_6),
-                ($outside_ball_color_6,
-                $outside_ball_centre_color_6,
-                $outside_centre_hover_ball_6
-                )
-        ) (($main_ball_color_7, $main_ball_hover_color_7),
-                ($outside_ball_color_7,
-                $outside_ball_centre_color_7,
-                $outside_centre_hover_ball_7
-                )
-        ) (($main_ball_color_8, $main_ball_hover_color_8),
-                ($outside_ball_color_8,
-                $outside_ball_centre_color_8,
-                $outside_centre_hover_ball_8
-                )
-        ) (($main_ball_color_9, $main_ball_hover_color_9),
-                ($outside_ball_color_9,
-                $outside_ball_centre_color_9,
-                $outside_centre_hover_ball_9
-                )
-        )
+
+    (
+      ($main_ball_color_1, $main_ball_hover_color_1),
+
+      (
+        $outside_ball_color_1,
+        $outside_ball_centre_color_1,
+        $outside_centre_hover_ball_1
+      )
+    )
+    (
+      ($main_ball_color_2, $main_ball_hover_color_2),
+
+      (
+        $outside_ball_color_2,
+        $outside_ball_centre_color_2,
+        $outside_centre_hover_ball_2
+      )
+    )
+    (
+      ($main_ball_color_3, $main_ball_hover_color_3),
+
+      (
+        $outside_ball_color_3,
+        $outside_ball_centre_color_3,
+        $outside_centre_hover_ball_3
+      )
+    )
+    (
+      ($main_ball_color_4, $main_ball_hover_color_4),
+
+      (
+        $outside_ball_color_4,
+        $outside_ball_centre_color_4,
+        $outside_centre_hover_ball_4
+      )
+    )
+    (
+      ($main_ball_color_5, $main_ball_hover_color_5),
+
+      (
+        $outside_ball_color_5,
+        $outside_ball_centre_color_5,
+        $outside_centre_hover_ball_5
+      )
+    )
+    (
+      ($main_ball_color_6, $main_ball_hover_color_6),
+
+      (
+        $outside_ball_color_6,
+        $outside_ball_centre_color_6,
+        $outside_centre_hover_ball_6
+      )
+    )
+    (
+      ($main_ball_color_7, $main_ball_hover_color_7),
+
+      (
+        $outside_ball_color_7,
+        $outside_ball_centre_color_7,
+        $outside_centre_hover_ball_7
+      )
+    )
+    (
+      ($main_ball_color_8, $main_ball_hover_color_8),
+
+      (
+        $outside_ball_color_8,
+        $outside_ball_centre_color_8,
+        $outside_centre_hover_ball_8
+      )
+    )
+    (
+      ($main_ball_color_9, $main_ball_hover_color_9),
+
+      (
+        $outside_ball_color_9,
+        $outside_ball_centre_color_9,
+        $outside_centre_hover_ball_9
+      )
+    )
 );
 
-/*
-gray: inner ball hover
-  ((main ball color, main ball hover color),
-          ( outside ball color,
-            outside ball centre color,
-            outside centre hover ball
-          )
-   ),
- */
 
-
-// containerSize
+//---------------------------------------------------------------------------------------------
+// containerSize - The Size (square) of the div containing menu
+//---------------------------------------------------------------------------------------------
 $containerSize: 500;
 
+//---------------------------------------------------------------------------------------------
+// Size of the centre button (square)
+//---------------------------------------------------------------------------------------------
 $baseButtonSize: 200;
 
+//---------------------------------------------------------------------------------------------
+// First level flyout buttons size (square)
+//---------------------------------------------------------------------------------------------
 $firstLevelButtonSize: 160;
-$offset: 20; // offset of inner circle
 
-$numberOfMenus: 6;
-$angleOffset: 40deg;
+//---------------------------------------------------------------------------------------------
+// offset of inner circle of First level flyout buttons
+//---------------------------------------------------------------------------------------------
+$offset: 20;
+
+//---------------------------------------------------------------------------------------------
+// Number of First Level Flyout Buttons
+//---------------------------------------------------------------------------------------------
+$numberOfMenus: 8;
+
+//---------------------------------------------------------------------------------------------
+// Offset of the buttons
+//   for instance if there were 4 buttons at 0deg offset (and angleOfCoverage, below, where 360)
+//   the buttons would be at: 0, 90, 180, 270
+//   at 45deg offset they would be at: 45, 135, 225, 315
+//---------------------------------------------------------------------------------------------
+
+$angleOffset: 45deg;
+
+//---------------------------------------------------------------------------------------------
+// The angle of coverage of the First Level buttons
+//  How far arround the center the FirstLevelButtons are placed
+//---------------------------------------------------------------------------------------------
 $angleOfCoverage: 360;
 
+//---------------------------------------------------------------------------------------------
+// Second level flyout buttons size (square)
+//---------------------------------------------------------------------------------------------
 $secondLevelButtonSize: 100;
-$angleOfCoverageSecondLevel: 180;
+
+//---------------------------------------------------------------------------------------------
+// The angle of coverage of the Second Level buttons
+//  How far arround the center the SecondLevelButtons are placed
+//---------------------------------------------------------------------------------------------
+$angleOfCoverageSecondLevel: 360;
+
+//---------------------------------------------------------------------------------------------
+// Number of Second Level Flyout Buttons
+//---------------------------------------------------------------------------------------------
 $secondLevelNumberOfMenus: 5;
 
+//---------------------------------------------------------------------------------------------
+// offset of inner circle of Second level flyout buttons
+//---------------------------------------------------------------------------------------------
 $inset_level: 20; // Inset of inner second level ball
-$first_level_inset: -10; // distance from center ball circumference
 
-//fonts
+//---------------------------------------------------------------------------------------------
+// inset of of Second level flyout buttons with respect to center ball's circumference
+//---------------------------------------------------------------------------------------------
+$first_level_inset: -10;
+
+//---------------------------------------------------------------------------------------------
+// setting for fonts used
+//---------------------------------------------------------------------------------------------
 $font_0: Roboto;
 $font_1: sans-serif;
 
-
 .img_center {
-        width:$secondLevelButtonSize * 1px;
-        height:$secondLevelButtonSize *  1px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin-left: -($secondLevelButtonSize/2) * 1px;
-        margin-top: -($secondLevelButtonSize/2) * 1px;
+  width: $secondLevelButtonSize * 1px;
+  height: $secondLevelButtonSize * 1px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -($secondLevelButtonSize/2) * 1px;
+  margin-top: -($secondLevelButtonSize/2) * 1px;
 }

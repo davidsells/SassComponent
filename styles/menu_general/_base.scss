@@ -1,6 +1,6 @@
-// First Level Buttons
-@import "math";
+@import "../utils/math";
 
+// First Level Buttons
 @function calculateMenuPositions( $angleOfCoverage, $numberOfMenus, $innerCircleDiameter,
 $outerCircleDiameter, $angleOffset) {
   $angleInc: $angleOfCoverage/$numberOfMenus;
@@ -16,11 +16,11 @@ $outerCircleDiameter, $angleOffset) {
     $firstLevelOffsets: append($firstLevelOffsets, $degrees - 90);
     $xo: ($totalRadius * cos($degrees) + $offset) * 1px;
     $yo: ($totalRadius * sin($degrees) + $offset) * 1px;
-    @if $count == 8 {
-      @debug "test `#{$xo}`";
-      @debug "test `#{$yo}`";
+//    @if $count == 8 {
+//      @debug "test `#{$xo}`";
+//      @debug "test `#{$yo}`";
 //      @error "test `#{$degrees}`";
-    }
+//    }
     $newValue: ($xo, $yo);
     $calculatedPositions: append($calculatedPositions, $newValue);
   }

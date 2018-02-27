@@ -59,8 +59,8 @@ img {
 }
 
 .baseButton:hover .button1_2 {
-  top: -150.0px;
-  left: 20.0px;
+  top: -141.67961px;
+  left: 72.53289px;
   transition: all .3s .0s ease;
   text-align: center;
   vertical-align: middle;
@@ -68,8 +68,8 @@ img {
 }
 
 .baseButton:hover .button1_3 {
-  top: 20.00009px;
-  left: -149.99998px;
+  top: -79.92349px;
+  left: -117.53289px;
   transition: all .3s .0s ease;
   text-align: center;
   vertical-align: middle;
@@ -77,8 +77,17 @@ img {
 }
 
 .baseButton:hover .button1_4 {
-  top: 190.05121px;
-  left: 20.01407px;
+  top: 119.92495px;
+  left: -117.53255px;
+  transition: all .3s .0s ease;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+.baseButton:hover .button1_5 {
+  top: 181.82837px;
+  left: 72.57582px;
   transition: all .3s .0s ease;
   text-align: center;
   vertical-align: middle;
@@ -88,7 +97,8 @@ img {
 .button1_1,
 .button1_2,
 .button1_3,
-.button1_4 {
+.button1_4,
+.button1_5 {
   width: 160px;
   height: 160px;
   border-radius: 50%;
@@ -175,8 +185,8 @@ img {
 }
 
 .button1_2:hover .button2_2_1 {
-  top: -42.5px;
-  left: 128.25318px;
+  top: -5.98896px;
+  left: 142.26845px;
   background: #3498db;
   transform: scale(1, 1);
   background: #c0392b;
@@ -189,8 +199,8 @@ img {
 }
 
 .button1_2:hover .button2_2_2 {
-  top: -105.0px;
-  left: 20.0px;
+  top: -98.88206px;
+  left: 58.62712px;
   background: #3498db;
   transform: scale(1, 1);
   background: #c0392b;
@@ -203,8 +213,8 @@ img {
 }
 
 .button1_2:hover .button2_2_3 {
-  top: -42.49999px;
-  left: -88.25317px;
+  top: -72.8931px;
+  left: -63.64133px;
   background: #3498db;
   transform: scale(1, 1);
   background: #c0392b;
@@ -229,8 +239,8 @@ img {
 }
 
 .button1_3:hover .button2_3_1 {
-  top: -88.25318px;
-  left: -42.5px;
+  top: -104.31524px;
+  left: 33.06606px;
   background: #3498db;
   transform: scale(1, 1);
   background: #2980b9;
@@ -243,8 +253,8 @@ img {
 }
 
 .button1_3:hover .button2_3_2 {
-  top: 20.00007px;
-  left: -104.99999px;
+  top: -53.47315px;
+  left: -81.12712px;
   background: #3498db;
   transform: scale(1, 1);
   background: #2980b9;
@@ -257,8 +267,8 @@ img {
 }
 
 .button1_3:hover .button2_3_3 {
-  top: 128.25879px;
-  left: -42.49859px;
+  top: 70.84253px;
+  left: -94.19308px;
   background: #3498db;
   transform: scale(1, 1);
   background: #2980b9;
@@ -283,8 +293,8 @@ img {
 }
 
 .button1_4:hover .button2_4_1 {
-  top: 82.5007px;
-  left: -88.25302px;
+  top: -30.84207px;
+  left: -94.19318px;
   background: #3498db;
   transform: scale(1, 1);
   background: #2980b9;
@@ -297,8 +307,8 @@ img {
 }
 
 .button1_4:hover .button2_4_2 {
-  top: 145.03765px;
-  left: 20.01034px;
+  top: 93.47423px;
+  left: -81.12687px;
   background: #3498db;
   transform: scale(1, 1);
   background: #2980b9;
@@ -311,8 +321,8 @@ img {
 }
 
 .button1_4:hover .button2_4_3 {
-  top: 83.59156px;
-  left: 128.60363px;
+  top: 144.36928px;
+  left: 33.08115px;
   background: #3498db;
   transform: scale(1, 1);
   background: #2980b9;
@@ -320,6 +330,60 @@ img {
 }
 
 .button1_4:hover .button2_4_3:hover {
+  background: rebeccapurple !important;
+  z-index: 10;
+}
+
+.button1_5 {
+  background: #2980b9;
+  display: block;
+  /*for the img inside your div */
+  margin: 0 auto;
+}
+
+.button1_5:hover {
+  background: #3498db;
+  transition: all .3s .0s ease;
+}
+
+.button1_5:hover .button2_5_1 {
+  top: 112.8956px;
+  left: -63.64072px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #2980b9;
+  border: 20px solid #2980b9;
+}
+
+.button1_5:hover .button2_5_1:hover {
+  background: rebeccapurple !important;
+  z-index: 10;
+}
+
+.button1_5:hover .button2_5_2 {
+  top: 138.99145px;
+  left: 58.65869px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #2980b9;
+  border: 20px solid #2980b9;
+}
+
+.button1_5:hover .button2_5_2:hover {
+  background: rebeccapurple !important;
+  z-index: 10;
+}
+
+.button1_5:hover .button2_5_3 {
+  top: 48.71508px;
+  left: 143.18176px;
+  background: #3498db;
+  transform: scale(1, 1);
+  background: #2980b9;
+  border: 20px solid #2980b9;
+}
+
+.button1_5:hover .button2_5_3:hover {
   background: rebeccapurple !important;
   z-index: 10;
 }
